@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merge pdf</title>
+</head>
+<body bgcolor="#ff7f50">
+{% block content %}
+    <h1>Merge PDF Example</h1>
+{% endblock %}
+<form method="post" action="/upload" enctype="multipart/form-data">
+<div class="mb-3">
+  <label for="formFile" class="form-label">choose PDF</label>
+  <input class="form-control" type="file" name="files[]"  accept=".pdf" multiple="true">
+    <input type="submit" value="Submit">
+</div>
+
+</form>
+</body>
+</html>
